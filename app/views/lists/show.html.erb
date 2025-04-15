@@ -1,0 +1,11 @@
+<div class="container">
+  <p><%= @list.nom %> :</p>
+  <div class="film-card">
+    <%= @list.movies.each do |movie| %>
+      <%= film.titre %>
+      <%= film.apercu %>
+      <%= film.url_affiche %>
+      <%= film.note %>
+    <% end %>
+  </div>
+</div>

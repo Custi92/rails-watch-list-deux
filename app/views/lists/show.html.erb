@@ -1,7 +1,7 @@
 <div class="container">
   <p><%= @list.nom %> :</p>
   <div class="film-card">
-    <%= @list.movies.each do |movie| %>
+    <% @list.films.each do |film| %>
       <%= film.titre %>
       <%= film.apercu %>
       <%= film.url_affiche %>

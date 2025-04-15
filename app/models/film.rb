@@ -4,4 +4,8 @@ class Film < ApplicationRecord
 
   validates :titre, :apercu, presence: true
   validates :titre, uniqueness: true
+
+  def to_s
+    titre
+  end
 end

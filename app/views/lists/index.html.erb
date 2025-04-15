@@ -1,5 +1,7 @@
 <div class="container">
-  <%= @lists.each do |list| %>
+  <% @lists.each do |list| %>
+  <div class="row">
     <%= list.nom %>
   <% end %>
+  </div>
 </div>

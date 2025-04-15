@@ -1,0 +1,7 @@
+<div class="container">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.association :film, collection: Film.all.order(:titre) %>
+    <%= f.input :commentaire %>
+    <%= f.submit "Créer un nouveau bookmark" %>
+  <% end %>
+</div>
